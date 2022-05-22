@@ -1,6 +1,8 @@
 import datetime
 
 key_path='/Users/rawat/Downloads/credentials.json'
+key_path_local='/Users/rawat/Downloads/credentials.json'
+
 project_id="linen-compiler-351008"
 datasetid="github_pr"
 tableid="pull_request"
