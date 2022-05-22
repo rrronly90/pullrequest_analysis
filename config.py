@@ -2,10 +2,11 @@ import datetime
 
 key_path='credentials.json'
 keypathlocal='/Users/rawat/Downloads/credentials.json'
-
 project_id="linen-compiler-351008"
 datasetid="github_pr"
 tableid="pull_request"
+repo_owner="rrronly90"
+repo_name="pullrequest_analysis"
 
 schema_pr = {
 "action":str,
