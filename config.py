@@ -1,6 +1,6 @@
 import datetime
 
-key_path='credentials.json'
+key_path='/tmp/credentials.json'
 project_id="linen-compiler-351008"
 datasetid="github_pr"
 tableid="pull_request"
