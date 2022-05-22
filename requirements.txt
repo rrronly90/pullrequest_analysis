@@ -9,8 +9,6 @@ google-cloud-core==2.3.0
 google-crc32c==1.3.0
 google-resumable-media==2.3.3
 googleapis-common-protos==1.56.1
-(venv) himanshus-MBP-2:casestudy1 rawat$ pip3 freeze | grep json
-(venv) himanshus-MBP-2:casestudy1 rawat$ pip3 freeze
 cachetools==5.1.0
 certifi==2022.5.18.1
 charset-normalizer==2.0.12
