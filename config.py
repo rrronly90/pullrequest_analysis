@@ -6,7 +6,7 @@ project_id="linen-compiler-351008"
 datasetid="github_pr"
 tableid="pull_request"
 repo_owner="rrronly90"
-repo_name="pullrequest_analysis"
+repo_name="casestudy1"
 
 schema_pr = {
 "action":str,
