@@ -7,6 +7,7 @@ def get_data(request):
     if request.headers.get("content-type"):  # calling json objects
         print('getting data ....')
         data =json.dumps(request.json)
+        print(data)
     else:
         print('no data found')
         exit(0)
