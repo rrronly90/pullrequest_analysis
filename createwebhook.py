@@ -24,7 +24,6 @@ headers = {
   'Accept': 'application/vnd.github.v3+json',
   'Authorization': 'Bearer '+token,
   'Content-Type': 'application/json',
-  'Cookie': '_octo=GH1.1.1558628448.1653205961; logged_in=no'
 }
 
 response = requests.request("POST", url, headers=headers, data=payload)

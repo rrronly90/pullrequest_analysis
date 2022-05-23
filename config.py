@@ -8,6 +8,8 @@ tableid="pull_request"
 tableid_users="users"
 repo_owner="rrronly90"
 repo_name="casestudy1"
+functionname="consumepr"
+
 
 schema_pr = {
 "action":str,
