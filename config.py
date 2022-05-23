@@ -1,17 +1,24 @@
 import datetime
 
 key_path='credentials.json'
+
+#modify below to imput your GCP credenatials. 
 keypathlocal='/Users/rawat/Downloads/credentials.json'
+
+#modify below all parameter self explanatory 
 project_id="linen-compiler-351008"
 datasetid="github_pr"
-tableid="pull_request"
-tableid_users="users"
 repo_owner="rrronly90"
 repo_name="casestudy1"
 functionname="consumepr"
+
+#you can change below table name but will need to create same in bigquery .
+tableid="pull_request"
+tableid_users="users"
 tableid_batch="pull_request_raw"
 
 
+# Defines schema for pull request data
 
 schema_pr = {
 "action":str,
@@ -56,6 +63,7 @@ schema_pr = {
 "changed_files":int
 }
 
+#defines user data schema for each pull request .
 schema_user={
 "login":str,
 "id":int,
