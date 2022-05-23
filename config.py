@@ -69,6 +69,6 @@ schema_user={
 "events_url":str,
 "received_events_url":str,
 "type":str,
-"site_admin":str
+"site_admin":bool
 }
 
