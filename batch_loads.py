@@ -7,6 +7,7 @@ import requests
 from config import *
 from helper import *
 import json
+import pandas as pd
 
 #generate url this is imported from configs
 url = "https://api.github.com/"+repo_owner+"/"+repo_name+"/pulls?state=all"
