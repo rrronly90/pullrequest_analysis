@@ -22,3 +22,13 @@ gcloud pubsub topics create dailycron-topic
 gcloud pubsub subscriptions create dailycron-sub --topic dailycron-topic
 gcloud scheduler jobs create pubsub dailycron --schedule "0 23 * * 0" --topic dailycron-topic --message-body "Hello"
 
+
+rm -rf /tmp/deploy/*
+eval "$comm"
+cp batch_loads.py /tmp/deploy/
+cp requirements.txt /tmp/deploy/
+url_batch="https:"`sudo gcloud functions deploy pull_batch --entry-point get_data --runtime python37  --trigger- --source=/tmp/deploy/ | grep "url: https:" | cut -d":" -f3`
+url_batch="https:"`sudo gcloud functions deploy batch_pull_reuqest --entry-point get_data --runtime python37  --trigger-topic dailycron-topic --source=/tmp/deploy/ | grep "url: https:" | cut -d":" -f3`
+
+
+
