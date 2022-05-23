@@ -5,6 +5,7 @@ keypathlocal='/Users/rawat/Downloads/credentials.json'
 project_id="linen-compiler-351008"
 datasetid="github_pr"
 tableid="pull_request"
+tableid_users="users"
 repo_owner="rrronly90"
 repo_name="casestudy1"
 
@@ -49,5 +50,25 @@ schema_pr = {
 "additions":int,
 "deletions":int,
 "changed_files":int
+}
+
+schema_user={
+"login":str,
+"id":int,
+"node_id":str,
+"avatar_url":str,
+"url":str,
+"html_url":str,
+"followers_url":str,
+"following_url":str,
+"gists_url":str,
+"starred_url":str,
+"subscriptions_url":str,
+"organizations_url":str,
+"repos_url":str,
+"events_url":str,
+"received_events_url":str,
+"type":str,
+"site_admin":str
 }
 
