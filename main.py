@@ -21,7 +21,7 @@ def get_data(request):
         user['pull_id']=data['pull_request']['id']
         df_user=pd.DataFrame([user], columns=schema_user) 
         df_user['raised_at']=df['updated_at']
-        df_user['site_admin']=user['site_admin'].astype(str)
+        df_user['site_admin']=df_user['site_admin'].astype(str)
         load_data(df_user , project_id, datasetid, tableid_users, )
     else:
         print('no data found')
