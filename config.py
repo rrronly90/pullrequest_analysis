@@ -28,10 +28,6 @@ schema_pr = {
 "merged_at":str,
 "merge_commit_sha":str,
 "assignee":str,
-"assignees":list,
-"requested_reviewers":str,
-"requested_teams":str,
-"labels":str,
 "milestone":str,
 "draft":bool,
 "commits_url":str,
@@ -54,3 +50,4 @@ schema_pr = {
 "deletions":int,
 "changed_files":int
 }
+
