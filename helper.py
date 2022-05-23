@@ -10,10 +10,10 @@ credentials = service_account.Credentials.from_service_account_file(key_path, sc
 client = bigquery.Client(credentials=credentials, project=project_id,)
 
 
-def load_data(df , project_id, datasetid, tableid, ):
+def load_data(df , project_id, datasetid, tableid,disposition ):
 
     job_config = bigquery.LoadJobConfig(
-        write_disposition="WRITE_APPEND",
+        write_disposition=disposition,
     )
 
     tid = project_id+'.'+datasetid+'.'+tableid

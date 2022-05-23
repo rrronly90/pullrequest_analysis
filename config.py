@@ -9,6 +9,8 @@ tableid_users="users"
 repo_owner="rrronly90"
 repo_name="casestudy1"
 functionname="consumepr"
+tableid_batch="pull_request_raw"
+
 
 
 schema_pr = {

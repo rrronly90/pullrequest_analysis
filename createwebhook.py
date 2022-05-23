@@ -3,7 +3,7 @@ import json
 import sys
 from config import *
 import sys
-payload_url = "https:"+str(sys.argv[1])
+payload_url = str(sys.argv[1])
 token = str(sys.argv[2])
 
 url = "https://api.github.com/repos/"+repo_owner+"/"+repo_name+"/hooks"
