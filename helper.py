@@ -1,8 +1,6 @@
-import datetime
 import json
 from google.cloud import bigquery
 import pandas
-import pytz
 from google.oauth2 import service_account
 from config import *
 
